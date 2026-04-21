@@ -3,12 +3,11 @@ using UnityEngine;
 public class WorldScroller : MonoBehaviour
 {
     public Transform tileLeft, tileRight;
-    public float speed = 0.1f;
 
     private void Update()
     {
-        tileLeft.position += new Vector3(speed * Time.deltaTime, 0, 0);
-        tileRight.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
+        tileLeft.position += new Vector3(GameManager.Instance.worldScrollingSpeed * -Time.deltaTime, 0, 0);
+        tileRight.Translate(new Vector3(GameManager.Instance.worldScrollingSpeed * -Time.deltaTime, 0, 0));
 
         if(tileRight.position.x <= 0)
         {
