@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1028014472664371935}
   - component: {fileID: 8231344573497829069}
   m_Layer: 3
-  m_Name: Ground
+  m_Name: Ground 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.16509432, g: 0.35048628, b: 1, a: 1}
+  m_Color: {r: 0.32694018, g: 0.44839403, b: 0.8773585, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8022878180694323302, guid: f8fcbef001fd82148a62c4185fc63155, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.86
+      value: -5.00647
       objectReference: {fileID: 0}
     - target: {fileID: 8022878180694323302, guid: f8fcbef001fd82148a62c4185fc63155, type: 3}
       propertyPath: m_LocalPosition.y
@@ -278,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8022878180694323302, guid: f8fcbef001fd82148a62c4185fc63155, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2799418
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: 8022878180694323302, guid: f8fcbef001fd82148a62c4185fc63155, type: 3}
       propertyPath: m_LocalPosition.y
