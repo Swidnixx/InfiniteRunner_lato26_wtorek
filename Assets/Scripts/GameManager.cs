@@ -11,11 +11,19 @@ public class GameManager : MonoBehaviour
     }
 
     public TMP_Text scoreText;
+    public TMP_Text coinsText;
     public float worldScrollingSpeed = 7;
 
     public GameObject gameOverPanel;
 
     float score = 0;
+    int coins = 0;
+
+    private void Start()
+    {
+        coins = PlayerPrefs.GetInt("Coins");
+        coinsText.text = coins.ToString();
+    }
 
     private void Update()
     {
@@ -35,5 +43,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Restart!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
+    }
+
+    public void AddCoin()
+    {
+        coins++;
+        coinsText.text = coins.ToString();
+        PlayerPrefs.SetInt("Coins", coins);
     }
 }
