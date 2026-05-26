@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (GameManager.Instance.BatteryActive) return;
+
         if(collision.CompareTag("Obstacle"))
         {
             GameManager.Instance.GameOver();

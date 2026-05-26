@@ -1,11 +1,10 @@
 using UnityEngine;
 
-public class Magnet : Powerup
+public class Battery : Powerup
 {
     protected override void Activate()
     {
         //base.Activate();
-
-        GameManager.Instance.ActivateMagnet();
+        GameManager.Instance.ActivateBattery();
     }
 }
