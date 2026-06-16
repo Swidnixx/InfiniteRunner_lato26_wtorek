@@ -82,4 +82,9 @@ public class GameManager : MonoBehaviour
     {
         batteryActive = false;
     }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

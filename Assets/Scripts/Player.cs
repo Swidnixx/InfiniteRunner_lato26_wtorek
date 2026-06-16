@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public AudioClip jumpAudio;
     private void Update()
     {
         if(Input.GetMouseButtonDown(0) && usedJumps < maxJumpCount)
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
             //rb.AddForce(new Vector2(0, force));
             rb.linearVelocityY = force;
             usedJumps++;
+            SoundManager.Instance.PlaySfx(jumpAudio);
         }
     }
 
